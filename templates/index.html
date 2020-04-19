@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RPi Web Server</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h2>Веб-сервер Raspberry Pi</h2>
+    <p>{{relay_state}}</p>
+    <a href="/on"><button>Включить</button></a>
+    <a href="/stop"><button class="off">Выключить</button></a>
+</body>
+</html>
