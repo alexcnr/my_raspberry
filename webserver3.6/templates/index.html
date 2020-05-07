@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> {{the_title}} </title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <img src="https://www.raspberrypi.org/wp-content/uploads/2011/10/Raspi-PGB001.png" alt="raspberry" width="200" height="200"/><br />
+    <h2>Веб-сервер Raspberry Pi</h2>
+    <p>{{relay_state}}</p>
+    <a href="/on"><button>Включить</button></a>
+    <a href="/stop"><button class="off">Выключить</button></a>
+
+
+
+
+
+
+
+    <h1>Результат: {{the_results}} </h1>
+
+  
+    <h1>Температура процессора: {{the_temperature}} </h1>
+
+    
+</body>
+</html>
